@@ -1,0 +1,217 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huynh Thanh Dien</title>
+    <link rel="stylesheet" href="/Css/main.css">
+    <link rel="stylesheet" href="/Css/music.css">
+    <script src="https://kit.fontawesome.com/88a9087069.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <nav class="sidebar">
+        <header>
+            <div class="image-text">
+                <span class="image" id="logo">
+                    <img src="/Picture/logo.png" alt="logo">
+                </span>67+
+
+                <div class="text header-text">
+                    <span class="name">Huynh Dien</span>
+                    <span class="profession">Profile Web</span>
+                </div>
+            </div>
+
+            <i class="fa-solid fa-chevron-right toggle"></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <!-- o tim kiem -->
+                <li class="search-box">                 
+                        <i class="fa-solid fa-magnifying-glass icon"></i>
+                        <input type="search" id="searchBox" placeholder="Search...">            
+                </li>
+                <!-- danh sach menu -->
+                <ul class="menu-link">
+                    <li class="nav-link" id="dashboard">
+                        <a href="#"> 
+                            <!-- <i class="fa-solid fa-home icon"></i> -->
+                            <!-- <i class="hicon">H</i> -->
+                            <i class="fa-solid fa-otter icon"></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li> 
+
+                    <li class="nav-link" id="social">
+                        <a href="#">
+                            <i class="fa-solid fa-link icon"></i>
+                            <span class="text nav-text">Social</span>
+                        </a>
+                    </li> 
+
+                    <li class="nav-link" id="todoapp">
+                        <a href="#">
+                            <i class="fa-solid fa-check icon"></i>
+                            <span class="text nav-text">To do App</span>
+                        </a>
+                    </li> 
+
+                    <li class="nav-link" id="music">
+                        <a href="#">
+                            <i class="fa-solid fa-music icon"></i>
+                            <span class="text nav-text">Music</span>
+                        </a>
+                    </li> 
+
+                    <li class="nav-link" id="">
+                        <a href="#">
+                            <i class="fa-solid fa-spinner icon"></i>
+                            <span class="text nav-text">Coming Soon...</span>
+                        </a>
+                    </li> 
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="fa-solid fa-spinner icon"></i>
+                            <span class="text nav-text">Coming Soon...</span>
+                        </a>
+                    </li> 
+                </ul>                        
+            </div>
+
+            <div class="bottom-content">
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class="fa-solid fa-moon icon moon"></i>
+                        <i class="fa-solid fa-sun icon sun"></i>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div> 
+        </div>
+    </nav>       
+    </section>  
+    <section class="home " id="home-dashboard">
+        <div class="text">Dashboard</div>
+    </section>    
+    <section class="home" id="home-social">
+        <div class="text">Social</div>
+    </section> 
+    <section class="home" id="home-todoapp">
+        <div class="text">To Do App</div>
+    </section> 
+
+
+    <!-- Music App -->
+    <section class="music-body home active" id="home-music">
+        <!-- <div class="text">Music</div> -->
+        <div class="wrapper">
+            <div class="top-bar">
+                <i id="more-music" class="fa-solid fa-chevron-down"></i>
+                <span>Now Playing</span>
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            <div class="img-area">
+                <img src="/Music/ImageSong/music-1.jpg" alt="">
+            </div>
+            <div class="song-details">
+                <p class="name"></p>
+                <p class="artist"></p>
+            </div>
+            <div class="progress-area">
+                <div class="progress-bar">
+                </div>
+                <div class="timer">
+                    <span class="current">00:00</span>
+                    <span class="duration">00:00</span>
+                </div>
+                <audio id ="main-audio" src = ""></audio>
+            </div>
+            <div class="controls">
+
+                <i id = "repeat-plist" class="fa-solid fa-repeat"></i>
+                <i id = "prev" class="fa-solid fa-backward-step"></i>
+
+                <div class="play-pause">
+                <i id = "metarial-icons" class="fa-solid fa-play"></i>
+                </div>               
+                <i id = "next" class="fa-solid fa-forward-step"></i>
+                <i id = "volume" class="fa-solid fa-volume-high"></i>               
+            </div>           
+            <div class="music-list">
+                <div class="header">
+                    <div class="row">
+                        <i id = "metarial-icons" class="fa-solid fa-bars-staggered"></i>
+                        <span>Music List</span>
+                    </div>
+                    <i id = "close" class="fa-solid fa-x"></i>
+                </div>
+                <ul>
+                    <li>
+                        <div class="row">
+                            <span>Giờ Thì Ai Cười (prod. by Kewtiie)</span>
+                            <p>HIEUTHUHAI</p>
+                        </div>
+                        <span class="audio-duration">3:05</span>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <span>Giờ Thì Ai Cười (prod. by Kewtiie)</span>
+                            <p>HIEUTHUHAI</p>
+                        </div>
+                        <span class="audio-duration">3:05</span>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <span>Giờ Thì Ai Cười (prod. by Kewtiie)</span>
+                            <p>HIEUTHUHAI</p>
+                        </div>
+                        <span class="audio-duration">3:05</span>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <span>Giờ Thì Ai Cười (prod. by Kewtiie)</span>
+                            <p>HIEUTHUHAI</p>
+                        </div>
+                        <span class="audio-duration">3:05</span>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <span>Giờ Thì Ai Cười (prod. by Kewtiie)</span>
+                            <p>HIEUTHUHAI</p>
+                        </div>
+                        <span class="audio-duration">3:05</span>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <span>Giờ Thì Ai Cười (prod. by Kewtiie)</span>
+                            <p>HIEUTHUHAI</p>
+                        </div>
+                        <span class="audio-duration">3:05</span>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <span>Giờ Thì Ai Cười (prod. by Kewtiie)</span>
+                            <p>HIEUTHUHAI</p>
+                        </div>
+                        <span class="audio-duration">3:05</span>
+                    </li>
+                </ul>
+               
+            </div>
+        </div>
+        <div class="zingmp3-style">
+            
+        </div>
+        <script src="/Js/music_script.js"></script>
+        <script src="/Js/music_list.js"></script>
+    </section>
+
+    <script src="/Js/main_script.js"></script>
+</body>
+</html>
