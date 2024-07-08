@@ -8,12 +8,12 @@ let allMusic = [
     {
         name:"Bạn Đời",
         artist:"Karik ft G-Ducky",
-        img:"music-2",
-        src:"music-2"
+        img:"Bạn Đời",
+        src:"Bạn Đời"
     },
     {
-        name:"",
-        artist:"",
+        name:"Chúng Ta Của Hiện Tại",
+        artist:"Sơn Tùng MTP",
         img:"",
         src:""
     },
