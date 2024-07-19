@@ -11,13 +11,21 @@ prevBtn = wrapper.querySelector("#prev"),
 progressArea = wrapper.querySelector(".progress-area"),
 progressBar = wrapper.querySelector(".progress-bar"),
 repeatBtn = wrapper.querySelector("#repeat-plist");
+ const volumeSlider = document.getElementById("volume-slider");
 
 
 let musicIndex = 1;
 let playedSongs = new Set();
 window.addEventListener("load", ()=>{
     loadMusic(musicIndex);
-})
+});
+
+
+mainAudio.volume = volumeSlider.value / 100 ;
+
+volumeSlider.addEventListener("input", function() {
+    mainAudio.volume = this.value / 100;
+});
 
 //Hàm chạy nhạc
 function loadMusic(indexNumb) {
@@ -145,38 +153,40 @@ repeatBtn.addEventListener("click", () => {
 });
 
 mainAudio.addEventListener("ended", () => {
-    // if(repeatBtn.classList.contains('fa-repeat'))
-    // {
-    //     netxMusic();
-    // }
-    // else
-    // {
-    //     let randIndex = Math.floor((Math.random() * allMusic.length) + 1);
-    //     do{
-    //         randIndex = Math.floor((Math.random() * allMusic.length) + 1);
-    //     }while(musicIndex == randIndex);
-    //     musicIndex = randIndex;
-    //     loadMusic(musicIndex); 
-    //     playMusic(); 
-    // }
-
-    if (repeatBtn.classList.contains('fa-repeat')) {
-        nextMusic();
-    } else {
-        let randIndex;
-
-        if (playedSongs.size === allMusic.length) {
-            playedSongs.clear(); // Clear the set if all songs have been played
-        }
-
-        do {
-            randIndex = Math.floor(Math.random() * allMusic.length);
-        } while (playedSongs.has(randIndex));
-
-        playedSongs.add(randIndex);
-        musicIndex = randIndex + 1; // Update musicIndex to be 1-based
-
-        loadMusic(musicIndex);
-        playMusic();
+    if(repeatBtn.classList.contains('fa-repeat'))
+    {
+        netxMusic();
     }
+    else
+    {
+        let randIndex = Math.floor((Math.random() * allMusic.length) + 1);
+        do{
+            randIndex = Math.floor((Math.random() * allMusic.length) + 1);
+        }while(musicIndex == randIndex);
+        musicIndex = randIndex;
+        loadMusic(musicIndex); 
+        playMusic(); 
+    }
+
+    // if (repeatBtn.classList.contains('fa-repeat')) {
+    //     nextMusic();
+    // } else {
+    //     let randIndex;
+
+    //     if (playedSongs.size === allMusic.length) {
+    //         playedSongs.clear(); // Clear the set if all songs have been played
+    //     }
+
+    //     do {
+    //         randIndex = Math.floor(Math.random() * allMusic.length);
+    //     } while (playedSongs.has(randIndex));
+
+    //     playedSongs.add(randIndex);
+    //     musicIndex = randIndex + 1; // Update musicIndex to be 1-based
+
+    //     loadMusic(musicIndex);
+    //     playMusic();
+    // }
 });
+
+

@@ -62,6 +62,7 @@ body.dark .wrapper{
 .top-bar i{
     font-size: 20px;
     color: var(--lightblack);
+
 }
 
 body.dark .top-bar i{
@@ -189,6 +190,7 @@ body.dark .song-details{
     justify-content: center;
 }
 
+
 .play-pause::before{
     content: "";
     position: absolute;
@@ -279,5 +281,25 @@ ul li .row p{
 }
 ul li .audio-duration{
     font-size: 16px;
+}
+
+.volume-controls{
+    position: relative;
+    right: 50px;
+    top: 170px;
+    display: flex;
+    border: 2px var(--lightborder) solid;
+    border-radius: 110px;
+    width: 145px;
+    height: 30px;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%; 
+    width: 150px; 
+    background: var(--white);
+}
+
+.volume-controls #volume-slider{
+    margin-left: 10px;
+    
 }
 
