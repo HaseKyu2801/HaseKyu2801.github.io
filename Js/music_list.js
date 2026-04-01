@@ -6,6 +6,12 @@ let allMusic = [
         src:"music-1"
     },
     {
+        name:"Người Im Lặng Gặp Người Hay Nói (prod. by Kewtiie)",
+        artist:"HIEUTHUHAI",
+        img:"Người Im Lặng Gặp Người Hay Nói",
+        src:"Người Im Lặng Gặp Người Hay Nói"
+    },
+    {
         name:"Bạn Đời",
         artist:"Karik ft G-Ducky",
         img:"Bạn Đời",
